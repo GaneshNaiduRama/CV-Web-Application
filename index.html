@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleforindex.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Information</h1>
+        
+        <!-- Personal Information -->
+        <h2>Personal Information</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="address">Address:</label>
+                <textarea id="address" class="form-control" rows="3"></textarea>
+            </div>
+            <div class="col-md-6">
+                <label for="city">City:</label>
+                <input type="text" id="city" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="state">State:</label>
+                <select id="State" class="form-select">
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                </select>
+                
+            </div>
+            <div class="col-md-6">
+                <label for="country">Country:</label>
+                <input type="text" id="country" class="form-control" value="India">
+            </div>
+            <div class="col-md-6">
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="form-control">
+            </div>
+        </div>
+        
+        <!-- Website and Social Media -->
+        <h2>Website and Social Media</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="website">Website:</label>
+                <input type="url" id="website" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="linkedin">LinkedIn:</label>
+                <input type="text" id="linkedin" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="twitter">Twitter:</label>
+                <input type="text" id="twitter" class="form-control">
+            </div>
+        </div>
+        
+        <!-- Objective -->
+        <h2>Objective</h2>
+        <div class="row">
+            <div class="col">
+                <label for="objective">Objective:</label>
+                <textarea id="objective" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+        
+        <!-- Educational Details -->
+        <h2>Educational Details</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <label for="university">University:</label>
+                <input type="text" id="university" class="form-control" placeholder="Enter your college/university name">
+                </div>
+                <div class="col-md-4">
+                    <label for="university_city">University/College City:</label>
+                    <input type="text" id="university_city" placeholder="Enter University/College Location">
+                </div>
+            <div class="col-md-3">
+                <label for="degree">Degree:</label>
+                <select name="degree" id="degree" class="form-select">
+                    <option value="Bachelor of Technology">Bachelor of Technology</option>
+                    <option value="Masters">Masters Degree</option>
+                    <option value="Doctorate">Doctorate (PhD)</option>
+                    <option value="Associate">Associate Degree</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Certificate">Certificate</option>
+                    <option value="Professional">Professional Degree (e.g., MD, JD)</option>
+                    <option value="Vocational">Vocational Degree</option>
+                    <option value="Honors">Honors Degree</option>
+                    <option value="Postgraduate Diploma">Postgraduate Diploma</option>
+                    <!-- Add more options as needed -->
+                </select>
+                
+            </div>
+            <div class="col-md-3">
+                <label for="major study">Major Study</label>
+                <select name="subBranches" id="subBranches" class="form-select">
+                    <option value="Computer Science Engineering">Computer Science Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Chemical Engineering">Chemical Engineering</option>
+                    <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+                    <option value="Automobile Engineering">Automobile Engineering</option>
+                    <option value="Aeronautical Engineering">Aeronautical Engineering</option>
+                    <option value="Nuclear Engineering">Nuclear Engineering</option>
+                    <option value="Biomedical Engineering">Biomedical Engineering</option>
+                    <option value="Environmental Engineering">Environmental Engineering</option>
+                    <option value="Petroleum Engineering">Petroleum Engineering</option>
+                    <option value="Industrial Engineering">Industrial Engineering</option>
+                    <option value="Materials Science and Engineering">Materials Science and Engineering</option>
+                    <option value="Ocean Engineering">Ocean Engineering</option>
+                    <option value="Mining Engineering">Mining Engineering</option>
+                    <option value="Geological Engineering">Geological Engineering</option>
+                    <option value="Biotechnology Engineering">Biotechnology Engineering</option>
+                    <option value="Robotics Engineering">Robotics Engineering</option>
+                    <option value="Photonics Engineering">Photonics Engineering</option>
+                    <!-- Add more engineering branches as needed -->
+                </select>
+                
+            </div>
+            <div class="col-md-3">
+                <label for="Score">Enter CGPA/Score</label>
+                <input type="text" id="degreeCgpaInput" class="form-control" placeholder="Enter your cgpa/score">
+            </div>
+            <div class="col-md-3">
+                <label for="start_date">Start Date:</label>
+                <input type="date" id="degree_start_date" name="start_date" class="form-control" >
+            </div>
+            
+            <div class="col-md-3">
+                <label for="end_date">End Date:</label>
+                <input type="date" id="degree_end_date" name="end_date" class="form-control" >
+            </div>
+        </div>
+        <br>
+        <!-- Intermediate Education  Details -->
+<h1>Intermediate / Diploma Details</h1>
+        <div class="row">
+<div class="col-md-3">
+    <label for="Diploma_IntermediateCollegeName">Diploma/IntermediateCollegeName</label>
+<input type="text" id="Diploma_IntermediateCollegeName" placeholder="Enter your Collge Name">
+</div>
+
+<div class="col-md-3">
+    <label for="Diploma_IntermediateCityName">Diploma/IntermediateCityName</label>
+    <input type="text" id="Diploma_IntermediateCityName" placeholder="Enter Diploma/IntermediateCityName">
+</div>
+<div class="col-md-3">
+    <label for="Diploma_IntermediateCourseSelect">Select Course</label>
+    <select name="" id="Diploma_IntermediateCourseSelect">
+        <option value="Diploma">Diploma</option>
+        <option value="Intermediate">Intermediate</option>
+    </select>
+    
+    </div>
+            <div class="col-md-3">
+<label for="Diploma/Intermediate">Select Course</label>
+<select id="diplomaCourseSelectInput">
+    <option value="MPC">Mathematics, Physics, and Chemistry</option>
+    <option value="BiPC">Biology, Physics, and Chemistry</option>
+    <option value="CEC">Commerce, Economics, and Civics</option>
+    <option value="HEC">History, Economics, and Civics</option>
+    <option value="MEC">Mathematics, Economics, and Commerce</option>
+    <option value="CEC2">Civics, Economics, and Commerce</option>
+    <option value="MPC2">Mathematics, Physics, and Computers</option>
+    <option value="BiPC2">Biology, Physics, and Computers</option>
+    <option value="Computer Science Engineering">Computer Science Engineering</option>
+        <option value="Mechanical Engineering">Mechanical Engineering</option>
+        <option value="Electrical Engineering">Electrical Engineering</option>
+        <option value="Civil Engineering">Civil Engineering</option>
+        <option value="Chemical Engineering">Chemical Engineering</option>
+        <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+        <option value="Automobile Engineering">Automobile Engineering</option>
+        <option value="Aeronautical Engineering">Aeronautical Engineering</option>
+        <option value="Nuclear Engineering">Nuclear Engineering</option>
+        <option value="Biomedical Engineering">Biomedical Engineering</option>
+        <option value="Environmental Engineering">Environmental Engineering</option>
+        <option value="Petroleum Engineering">Petroleum Engineering</option>
+        <option value="Industrial Engineering">Industrial Engineering</option>
+        <option value="Materials Science and Engineering">Materials Science and Engineering</option>
+        <option value="Ocean Engineering">Ocean Engineering</option>
+        <option value="Mining Engineering">Mining Engineering</option>
+        <option value="Geological Engineering">Geological Engineering</option>
+        <option value="Biotechnology Engineering">Biotechnology Engineering</option>
+        <option value="Robotics Engineering">Robotics Engineering</option>
+        <option value="Photonics Engineering">Photonics Engineering</option>
+  </select>
+  
+            </div>
+            <div class="col-md-3">
+<label for="Diploma_IntermediateCGPA">Enter CGPA/Score</label>
+<input type="text" id="Diploma_IntermediateCGPA" placeholder="Enter CGPA or Score"/>
+            </div>
+            <div class="col-md-3">
+                <label for="start_date">Start Date:</label>
+                <input type="date" id="Diploma_Intermediate_start_date" name="start_date" class="form-control" >
+            </div>
+            
+            <div class="col-md-3">
+                <label for="end_date">End Date:</label>
+                <input type="date" id="Diploma_Intermediate_end_date" name="end_date" class="form-control" >
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <h2>SSC Education Details</h2>
+            <div class="col-md-3">
+                <label for="ssc_school_name">SSC School Name:</label>
+                <input type="text" id="ssc_school_name" name="ssc_school_name" required>
+            </div>
+        
+            <!-- SSC City Name Input -->
+            <div class="col-md-3">
+                <label for="ssc_city_name">SSC City Name:</label>
+                <input type="text" id="ssc_city_name" name="ssc_city_name" required>
+            </div>
+        
+            <!-- SSC Course Dropdown -->
+            <div class="col-md-3">
+                <label for="ssc_select_course">Select Course:</label>
+                <select name="ssc_select_course" id="ssc_select_course" class="form-select" required>
+                    <option value="">Select Course</option>
+                    <option value="Science">Science</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Arts">Arts</option>
+                    <!-- Add more options for SSC courses -->
+                </select>
+            </div>
+        
+            <!-- Enter SSC CGPA/Score Input -->
+            <div class="col-md-3">
+                <label for="ssc_cgpa_score">Enter CGPA/Score:</label>
+                <input type="text" id="ssc_cgpa_score" name="ssc_cgpa_score" required>
+            </div>
+        
+            <!-- SSC Start Date Input -->
+            <div class="col-md-3">
+                <label for="ssc_start_date">Start Date:</label>
+                <input type="date" id="ssc_start_date" name="ssc_start_date" required>
+            </div>
+        
+            <!-- SSC End Date Input -->
+            <div class="col-md-3">
+                <label for="ssc_end_date">End Date:</label>
+                <input type="date" id="ssc_end_date" name="ssc_end_date" required>
+            </div>
+        
+        </div>
+        <br>
+        <hr>
+        <h2>Technical Skills</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <label for="Technical_Skills">Enter Technical Skills</label>
+                <input type="text" id="Technical_Skills" placeholder="Type the Skills you know">
+            </div>
+            <div class="col-md-4">
+                <label for="Skill_Rating">Skill Rating (1-100):</label>
+                <input type="number" id="Skill_Rating" name="skill_rating" min="1" max="100" class="form-control" oninput="validity.valid||(value='');">
+            </div>
+            
+        </div>
+        <br>
+        <hr>
+        <h2>Projects / Experience</h2>
+        <div class="row">
+             <!-- Portfolio Link Input -->
+  
+    <!-- Major Project Input -->
+    <div class="col-md-6">
+        <h3>Major Project</h3>
+        <div>
+            <label for="major_project_title">Title:</label>
+            <input type="text" id="major_project_title" name="major_project_title" class="form-control" placeholder="Enter title of your major project">
+        </div>
+        <div>
+            <label for="major_project_description">Description:</label>
+            <textarea id="major_project_description" name="major_project_description" class="form-control" placeholder="Enter description of your major project"></textarea>
+        </div>
+    </div>
+
+    <!-- Minor Project Input -->
+    <div class="col-md-6">
+        <h3>Minor Project</h3>
+        <div>
+            <label for="minor_project_title">Title:</label>
+            <input type="text" id="minor_project_title" name="minor_project_title" class="form-control" placeholder="Enter title of your minor project">
+        </div>
+        <div>
+            <label for="minor_project_description">Description:</label>
+            <textarea id="minor_project_description" name="minor_project_description" class="form-control" placeholder="Enter description of your minor project"></textarea>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <label for="portfolio_link">Portfolio Link:</label>
+        <input type="url" id="portfolio_link" name="portfolio_link" class="form-control" placeholder="Enter your portfolio link">
+    </div>
+
+    </div>
+ <!-- Hobby Input Fields -->
+ <div id="hobbies_container">
+    <div class="hobby-group">
+        <label for="hobby1">Hobby 1:</label>
+        <input type="text" id="hobby1" name="hobby[]" class="form-control" placeholder="Enter your first hobby">
+        <button type="button" class="delete-btn">Delete</button>
+    </div>
+</div>
+
+<!-- Add Hobby Button -->
+<button type="button" id="add_hobby_btn">Add Hobby +</button>
+<hr>
+<!-- Activities Input -->
+<div class="col-md-12">
+    <label for="activities">Activities:</label>
+    <textarea id="activities" name="activities" class="form-control" placeholder="Enter your activities"></textarea>
+</div>
+
+<!-- Languages Input -->
+<div class="col-md-12">
+    <label for="languages">Languages:</label>
+    <input type="text" id="languages" name="languages" class="form-control" placeholder="Enter languages you know (comma-separated)">
+</div>
+<div class="row">
+     <!-- Internships Input -->
+     <div class="col-md-12">
+        <label for="internships">Internships (Optional):</label>
+        <textarea id="internships" name="internships" class="form-control" placeholder="Enter your internships"></textarea>
+    </div>
+    <div class="col-md-6">
+    
+            <label for="certifications">Certifications:</label>
+            <textarea id="certifications" name="certifications" class="form-control" placeholder="Enter your certifications"></textarea>
+        
+    </div>
+
+          <!-- Personality Traits Input -->
+    <div class="col-md-12">
+        <label for="personality_traits">Personality Traits:</label>
+        <textarea id="personality_traits" name="personality_traits" class="form-control" placeholder="Enter your personality traits"></textarea>
+    </div>
+
+     <!-- Declaration Input -->
+     <div class="col-md-12">
+        <label for="declaration">Declaration:</label>
+        <textarea id="declaration" name="declaration" class="form-control" placeholder="Enter your declaration"></textarea>
+    </div>
+</div>
+    
+    <div class="row mt-3">
+        <div class="col">
+            <button id="submitBtn" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+        </div>
+
+        <!-- Submit Button -->
+       
+    </div>
+
+    <!-- Script for handling form submission -->
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+    // Personal Information
+    var fullNameInput = document.getElementById("fullName");
+    var addressInput = document.getElementById("address");
+    var cityInput = document.getElementById("city");
+    var stateInput = document.getElementById("State");
+    var countryInput = document.getElementById("country");
+    var pincodeInput = document.getElementById("pincode");
+    var phoneInput = document.getElementById("phone");
+    var emailInput = document.getElementById("email");
+    var websiteInput = document.getElementById("website");
+    var linkedinInput = document.getElementById("linkedin");
+    var twitterInput = document.getElementById("twitter");
+    var objectiveInput = document.getElementById("objective");
+    var universityInput = document.getElementById("university");
+    var degreeInput = document.getElementById("degree");
+
+    // Educational Details
+    var degreeStartDateInput = document.getElementById("degree_start_date");
+    var degreeEndDateInput = document.getElementById("degree_end_date");
+    var degeeCGP=document.getElementById("degreeCgpaInput");
+    var diplomaCollegeNameInput = document.getElementById("Diploma_IntermediateCollegeName");
+    var diplomaCityNameInput = document.getElementById("Diploma_IntermediateCityName");
+    var Diploma_IntermediateCourseSelection = document.getElementById("Diploma_IntermediateCourseSelect");
+
+    var diplomaCourseSelectInput = document.getElementById("diplomaCourseSelectInput");
+    var diplomaCGPAInput = document.getElementById("Diploma_IntermediateCGPA");
+    var diplomaStartDateInput = document.getElementById("Diploma_Intermediate_start_date");
+    var diplomaEndDateInput = document.getElementById("Diploma_Intermediate_end_date");
+    var sscSchoolNameInput = document.getElementById("ssc_school_name");
+    var sscCityNameInput = document.getElementById("ssc_city_name");
+    var sscCourseSelectInput = document.getElementById("ssc_select_course");
+    var sscCGPAInput = document.getElementById("ssc_cgpa_score");
+    var sscStartDateInput = document.getElementById("ssc_start_date");
+    var sscEndDateInput = document.getElementById("ssc_end_date");
+
+    // Technical Skills
+    var technicalSkillsInput = document.getElementById("Technical_Skills");
+    var skillRatingInput = document.getElementById("Skill_Rating");
+
+    // Projects
+    var majorProjectTitleInput = document.getElementById("major_project_title");
+    var majorProjectDescriptionInput = document.getElementById("major_project_description");
+    var minorProjectTitleInput = document.getElementById("minor_project_title");
+    var minorProjectDescriptionInput = document.getElementById("minor_project_description");
+    var portfolioLinkInput = document.getElementById("portfolio_link");
+
+    // Hobbies
+    var hobbiesContainer = document.getElementById("hobbies_container");
+
+    // Activities
+    var activitiesInput = document.getElementById("activities");
+
+    // Languages
+    var languagesInput = document.getElementById("languages");
+
+    // Internships
+    var internshipsInput = document.getElementById("internships");
+
+    // Certifications
+    var certificationsInput = document.getElementById("certifications");
+
+    // Personality Traits
+    var personalityTraitsInput = document.getElementById("personality_traits");
+
+    // Declaration
+    var declarationInput = document.getElementById("declaration");
+
+    // Submit Button
+    var submitButton = document.getElementById("submitBtn");
+
+    // Add Hobby Button
+    var addHobbyButton = document.getElementById("add_hobby_btn");
+
+    // Array to store hobbies
+    var hobbies = [];
+
+    // Function to get hobbies from input fields
+    function getHobbies() {
+        hobbies = [];
+        var hobbyInputs = document.querySelectorAll(".hobby-group input[type='text']");
+        hobbyInputs.forEach(function(input) {
+            hobbies.push(input.value);
+        });
+    }
+
+    // Event listener for adding hobbies
+    addHobbyButton.addEventListener('click', function() {
+        var hobbyGroup = createHobbyGroup();
+        hobbiesContainer.appendChild(hobbyGroup);
+    });
+
+    // Event listener for deleting hobbies
+    hobbiesContainer.addEventListener('click', function(event) {
+        if (event.target.classList.contains('delete-btn')) {
+            event.target.parentNode.remove();
+        }
+    });
+
+    // Function to create hobby group
+    function createHobbyGroup() {
+        var hobbyGroup = document.createElement('div');
+        hobbyGroup.classList.add('hobby-group');
+
+        var label = document.createElement('label');
+        label.textContent = `Hobby ${hobbiesContainer.children.length + 1}:`;
+
+        var input = document.createElement('input');
+        input.type = 'text';
+        input.name = 'hobby[]';
+        input.classList.add('form-control');
+        input.placeholder = `Enter your hobby ${hobbiesContainer.children.length + 1}`;
+
+        var deleteButton = document.createElement('button');
+        deleteButton.type = 'button';
+        deleteButton.classList.add('delete-btn');
+        deleteButton.textContent = 'Delete';
+
+        hobbyGroup.appendChild(label);
+        hobbyGroup.appendChild(input);
+        hobbyGroup.appendChild(deleteButton);
+
+        return hobbyGroup;
+    }
+
+    // Event listener for submit button
+    submitButton.addEventListener("click", function() {
+        // Get hobbies
+        getHobbies();
+
+        // Construct data object
+        var data = {
+            personalInformation: {
+                fullName: fullNameInput.value,
+                address: addressInput.value,
+                city: cityInput.value,
+                state: stateInput.value,
+                country: countryInput.value,
+                pincode: pincodeInput.value,
+                phone: phoneInput.value,
+                email: emailInput.value,
+                website: websiteInput.value,
+                linkedin: linkedinInput.value,
+                twitter: twitterInput.value,
+                objective: objectiveInput.value
+            },
+            educationalDetails: {
+                university: universityInput.value,
+                degree: degreeInput.value,
+                degreeStartDate: degreeStartDateInput.value,
+                degreeEndDate: degreeEndDateInput.value,
+                degreeCgpaInput:degeeCGP.value,
+                diplomaCollegeName: diplomaCollegeNameInput.value,
+                diplomaCityName: diplomaCityNameInput.value,
+                DiplomaCourseSelection: Diploma_IntermediateCourseSelection.value,
+
+                diplomacourseSelect: diplomaCourseSelectInput.value,
+                diplomaCGPA: diplomaCGPAInput.value,
+                diplomaStartDate: diplomaStartDateInput.value,
+                diplomaEndDate: diplomaEndDateInput.value,
+                sscSchoolName: sscSchoolNameInput.value,
+                sscCityName: sscCityNameInput.value,
+                sscCourseSelect: sscCourseSelectInput.value,
+                sscCGPA: sscCGPAInput.value,
+                sscStartDate: sscStartDateInput.value,
+                sscEndDate: sscEndDateInput.value
+            },
+            technicalSkills: {
+                skills: technicalSkillsInput.value,
+                rating: skillRatingInput.value
+            },
+            projects: {
+                majorProjectTitle: majorProjectTitleInput.value,
+                majorProjectDescription: majorProjectDescriptionInput.value,
+                minorProjectTitle: minorProjectTitleInput.value,
+                minorProjectDescription: minorProjectDescriptionInput.value,
+                portfolioLink: portfolioLinkInput.value
+            },
+            hobbies: hobbies,
+            activities: activitiesInput.value,
+            languages: languagesInput.value,
+            internships: internshipsInput.value,
+            certifications: certificationsInput.value,
+            personalityTraits: personalityTraitsInput.value,
+            declaration: declarationInput.value
+        };
+
+        // Store data in local storage
+        localStorage.setItem('resumeData', JSON.stringify(data));
+
+        // Redirect to display.html
+        window.location.href = 'display.html';
+    });
+});
+    </script>
+</body>
+</html>
